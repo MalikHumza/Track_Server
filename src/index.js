@@ -1,7 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const appRoutes = require("./routes/authRoutes");
+const bodyParser = require("body-parser");
 
 const app = express();
+
+app.use(bodyParser.json());
+app.use(appRoutes);
+
 const mongoUri =
   "mongodb+srv://admin:ideapad300@cluster0.myaoy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
