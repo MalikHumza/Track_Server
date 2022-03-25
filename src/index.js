@@ -1,14 +1,17 @@
 require('./models/User');
+require('./models/Track');
 const express = require("express");
 const mongoose = require("mongoose");
 const appRoutes = require("./routes/authRoutes");
 const bodyParser = require("body-parser");
 const requireAuth = require('./middlewares/requireAuth');
+const trackRoutes = require('./routes/trackRoutes');
 
 const app = express();
 
 app.use(bodyParser.json());
 app.use(appRoutes);
+app.use(trackRoutes);
 
 const mongoUri =
   "mongodb+srv://admin:ideapad300@cluster0.myaoy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
