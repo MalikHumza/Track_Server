@@ -1,0 +1,15 @@
+{
+  "name": "Track_Server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MalikHumza/Track_Server.git",
+  "author": "MalikHumza <humzamalik1146@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.0",
+    "nodemon": "^3.0.1"
+  }
+}
